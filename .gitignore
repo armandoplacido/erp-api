@@ -1,0 +1,70 @@
+# Dependências
+node_modules/
+.pnpm-store/
+
+# Build e artefatos do TypeScript
+dist/
+build/
+*.tsbuildinfo
+
+# Variáveis de ambiente e secrets
+.env
+.env.*
+!.env.example
+
+# Certificados, chaves e wallets
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.jks
+wallet/
+
+# Testes e cobertura
+coverage/
+.nyc_output/
+junit.xml
+reports/
+test-results/
+
+# Análise de código e segurança
+.scannerwork/
+.sonar/
+trivy-report*.json
+zap-report*
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Ambientes do Postman com credenciais
+*.postman_environment.json
+
+# Arquivos temporários
+tmp/
+temp/
+.cache/
+*.tmp
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace
+*.swp
+*.swo
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
