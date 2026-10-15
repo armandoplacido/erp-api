@@ -5,6 +5,6 @@ export default defineConfig({
     globals: true,
   },
   resolve: {
-    tsconfigPaths: true
-  }
+    tsconfigPaths: true,
+  },
 })

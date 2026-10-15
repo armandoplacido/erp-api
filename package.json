@@ -7,18 +7,29 @@
     "build": "tsup --tsconfig tsconfig.build.json src/main.ts",
     "start": "node dist/main.cjs",
     "dev": "tsx watch src/main.ts",
-    "test": "vitest"
+    "test": "vitest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "type": "module",
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@types/node": "^24.19.2",
+    "eslint": "^10.12.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.7",
+    "eslint-plugin-simple-import-sort": "^14.0.0",
     "git-commit-msg-linter": "^5.0.10",
+    "globals": "^17.13.0",
+    "neostandard": "^0.14.1",
+    "prettier": "^3.9.10",
     "tsup": "^8.5.1",
     "tsx": "^4.23.15",
-    "typescript": "^7.0.2",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.71.2",
     "vitest": "^5.0.4"
   }
 }
