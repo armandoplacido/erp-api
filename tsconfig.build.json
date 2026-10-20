@@ -6,4 +6,5 @@
     "outDir": "disc"
   },
   "include": ["src/**/*"],
+  "exclude": ["knexfile.ts"]
 }

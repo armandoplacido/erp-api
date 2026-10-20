@@ -26,7 +26,7 @@ export default tseslint.config(
       parserOptions: {
         projectService: {
           // Arquivos de config fora do tsconfig.json
-          allowDefaultProject: ['vitest.config.ts'],
+          allowDefaultProject: ['vitest.config.ts', 'knexfile.ts'],
         },
         tsconfigRootDir: import.meta.dirname,
       },

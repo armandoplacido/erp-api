@@ -10,7 +10,11 @@
     "test": "vitest run --passWithNoTests",
     "test:watch": "vitest --passWithNoTests",
     "prepare": "husky",
-    "lint:fix": "eslint src/*.ts --fix"
+    "lint:fix": "eslint src/*.ts --fix",
+    "knex": "tsx --env-file=.env --env-file-if-exists=.env.local ./node_modules/knex/bin/cli.js --knexfile knexfile.ts",
+    "migrate:make": "pnpm knex migrate:make -x ts",
+    "migrate:latest": "pnpm knex migrate:latest",
+    "migrate:rollback": "pnpm knex migrate:rollback"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +30,7 @@
     "git-commit-msg-linter": "^5.0.10",
     "globals": "^17.13.0",
     "husky": "^9.1.7",
+    "knex": "^3.3.0",
     "lint-staged": "^17.6.0",
     "neostandard": "^0.14.1",
     "prettier": "^3.9.10",
@@ -39,5 +44,8 @@
     "*.ts": [
       "npm run lint:fix"
     ]
+  },
+  "dependencies": {
+    "oracledb": "^26.0.0"
   }
 }
